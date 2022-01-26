@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo-JS</title>
+    <link rel="icon" type="image/x-icon" href="./img/T-logo.webp">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" >
+  </head>
+  <body>
+  
+    <div class="m-box hidden">
+      <h2 id="l1">Add New List</h2>
+      <input type="text"  id="name">
+      <div class="modal-btns">
+        <button class="add">ADD</button>
+        <button class="close">CLOSE</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="task-header">
+        <h1>Tasks <span>Lists</span></h1>
+        <p onclick="addBoxes()">
+          <i class="fas fa-plus-circle fa-2x"></i>
+          <span id="add-task-text">Add List</span>
+        </p>
+      </div>
+      <div id="no-item-div">No items in the todo lists</div>
+      <div class="flex-container"></div>
+    </div>
+    <div class="selected s-none"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
